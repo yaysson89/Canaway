@@ -220,15 +220,12 @@
       }
     });
   }
-  
 
-  
   function zoomout() {
-    var div = document.getElementById('s-block');
+    var div = document.getElementById("s-block");
     var scale = 1 - window.pageYOffset / 5000; // Cambia el divisor para ajustar la velocidad de reducción de escala
-    div.style.transform = 'scale(' + scale + ')';
-  };
-
+    div.style.transform = "scale(" + scale + ")";
+  }
 
   //function onVisible(element, callback) {
   //  new IntersectionObserver((entries, observer) => {
@@ -240,11 +237,8 @@
   //    });
   //  }).observe(element);
   //}
-//
+  //
   //onVisible(document.querySelector('#reservation'), () => window.addEventListener('scroll', zoomout));
-
-  
-
 })(window.jQuery);
 
 /* Slider (work in progress)
@@ -276,7 +270,7 @@ $(function () {
     var setCSS = {
       position: "absolute",
       top: "0",
-      left: "0"
+      left: "0",
     };
 
     $(".slide").css(setCSS);
@@ -305,10 +299,10 @@ $(function () {
     var setSlideCSS = {
       float: "left",
       display: "inline-block",
-      width: $c
+      width: $c,
     };
     var setSlideShowCSS = {
-      width: $ss // set width of slideshow container
+      width: $ss, // set width of slideshow container
     };
     $(".slide").css(setSlideCSS);
     $(".slideshow").css(setSlideShowCSS);
